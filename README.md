@@ -4,6 +4,10 @@
   A lightweight and powerful BungeeCord/Waterfall plugin for fallback servers and custom hub commands.
   <br />
   Легкий и мощный плагин для BungeeCord/Waterfall для настройки резервных серверов и кастомных команд.
+  <br /><br />
+  <a href="https://bstats.org/plugin/bungeecord/xyfallback-servers/33300">
+    <img src="https://bstats.org/signatures/bungeecord/xyfallback-servers.svg" alt="bStats" />
+  </a>
 </div>
 
 ---
@@ -51,6 +55,10 @@ fallback:
   # [RU] Кикать ли игрока с прокси, если все резервные серверы недоступны.
   # [EN] Whether to disconnect the player from the proxy if all fallback servers are down.
   kick-if-all-down: true
+
+# [RU] Отправлять ли анонимную статистику на bStats.org (помогает автору).
+# [EN] Whether to send anonymous statistics to bStats.org (helps the author).
+bstats: true
 
 # [RU] Сообщения. Плейсхолдеры:
 # %server% - Целевой сервер (при подключении) или сервер, с которого кикнуло (при падении/кике).
