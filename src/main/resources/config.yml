@@ -1,0 +1,35 @@
+# [RU] Команда: Сервер. Пример: 'hub: lobby' означает, что при вводе /hub игрок будет перемещен на сервер lobby.
+# [EN] Command: Target Server. Example: 'hub: lobby' means typing /hub sends the player to the lobby server.
+commands:
+  hub: "lobby"
+  lobby: "lobby"
+  vanilla: "vanilla"
+
+# [RU] Резервные серверы. При падении или кике плагин попытается перевести игрока на первый доступный сервер из этого списка.
+# [EN] Fallback servers. Upon crash or kick, the plugin will try to move the player to the first available server in this list.
+fallback:
+  servers:
+    - "lobby-01"
+    - "lobby-02"
+  
+  # [RU] Кикать ли игрока с прокси, если все резервные серверы недоступны.
+  # [EN] Whether to disconnect the player from the proxy if all fallback servers are down.
+  kick-if-all-down: true
+
+# [RU] Отправлять ли анонимную статистику на bStats.org (помогает автору).
+# [EN] Whether to send anonymous statistics to bStats.org (helps the author).
+bstats: true
+
+# [RU] Сообщения. Плейсхолдеры:
+# %server% - Целевой сервер (при подключении) или сервер, с которого кикнуло (при падении/кике).
+# %reason% - Причина кика (используется только в сообщениях о кике).
+# [EN] Messages. Placeholders:
+# %server% - Target server (when connecting) or the server the player was kicked from (on crash/kick).
+# %reason% - Kick reason (only used in kick messages).
+messages:
+  connecting: "&aПодключение к серверу &e%server%&a..."
+  already_connected: "&cВы уже находитесь на этом сервере!"
+  kicked_to_fallback: "&cВы были отключены от сервера &e%server%&c. Причина: &e%reason%\n&aВы были перемещены в лобби."
+  kick_all_down: "&cВы были кикнуты с сервера &e%server%&c: &e%reason%\n&cРезервные сервера также недоступны."
+  no_permission: "&cУ вас нет прав."
+  reload_success: "&aПлагин XyFallback успешно перезагружен!"
