@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <name>XyFallback</name>
-    <description>Velocity custom commands and fallback server management</description>
+    <description>Bungeecord and Waterfall custom commands and fallback server management</description>
 
     <properties>
         <java.version>11</java.version>
